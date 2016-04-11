@@ -1,0 +1,15 @@
+body {
+    background-color: Black;
+}
+h1 {
+    color: Red;
+}
+p {
+    color: Silver;
+    font-size: 110%;
+    text-align: justify;
+    padding: left: 110px;
+}
+img { 
+    border: 8px solid Silver;
+}

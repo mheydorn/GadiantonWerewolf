@@ -1,0 +1,100 @@
+html{
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    background: black;
+   }
+body {
+    background: url("Pictures/rainDrops.jpg");
+    color: white;
+}
+h1 {
+    font-size: 60px;
+    color: Silver;
+    text-align: center;
+}
+h2 {
+    font-size: 45px;
+    color: blue;
+    text-align: center;
+}
+h3 {
+    font-size: 25px;
+    font-weight: bold;
+    color: darkgreen;
+    text-align: Yellow;
+    text-indent: 20px;
+}
+h4 {
+    font-size: 30px;
+    font-weight: bold;
+    color: Silver;
+    text-align: center;
+}
+h5 {
+   font-size: 30px;
+   color: silver;
+   text-align: left;
+   font-weight: bold;
+}
+h6{
+   font-size: 30px;
+   color: darkgreen;
+   text-align: center;
+   font-weight: bold;
+}
+p {
+    color: silver;
+    font-family: "Times New Roman";
+    font-size: 25px;
+}
+p1 {
+	color: white;
+}
+ul li {
+    font-size: 20px;
+    color: darkblue;
+}
+
+a {
+    color: darkblue;
+}
+button{
+  margin:auto;
+  display:block;
+}
+form {
+  text-align:center;
+  padding: 15px;
+  color: white;
+}
+table, td {
+    text-align: center;
+    color : white;
+    font-size: 20px;
+}
+th {
+    text-align: center;
+    color : red;
+    font-size: 24px;
+}
+header {
+    text-align: center;
+    color : white;
+    font-size: 20px;
+}
+img {
+    border: 8px solid Silver;
+}
+.Label {
+  color : white;
+}
+#login {
+   position: center;
+   margin: 0;
+   margin: 50px;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   padding: 0 0 50 50;
+   font-weight: bold;
+}

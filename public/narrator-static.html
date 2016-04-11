@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+<script src="javascripts/app.js"></script>
+<link href="bofm.css" rel="stylesheet" type="text/css">
+<style>
+.hide {
+  display: none;
+}
+
+</style>
+
+<body ng-app="game" ng-controller="MainCtrl">
+<hr>
+<hr> 
+<h1>
+Narrator Page for {{game}} 
+</h1>
+  <table style="width:100%">
+	<tr>
+	  <th>Role</th>
+	  <th>Name</th>
+	 <!-- Living status will just be text that says "Dead" or "Living" -->
+	  <th>Living Status</th>
+	  <th>Side</th>
+	  <th>Actions</th>
+	</tr>
+	<tr ng-repeat = "player in players">
+	  <td>Angel</td>
+	  <td>Adele</td>
+	  <td>Nephite</td>
+	  <td>Living</td>
+
+<!--the kill button should change the living status to dead, but the save button will change it back to living; 
+the convert button will toggle them from Nephite to Gadianton and vice versa -->
+	  <td>
+	    <span title="This will change the players living status to dead."> <button ng-model="kill-{{player.name}}">Kill</button> </span>
+	    <span title="This will change the players living status to living."> <button ng-model="save-{{player.name}}">Save</button> </span>
+	    <span title="This will turn a Gadianton into a Nephite or vice versa."> <button ng-model="convert-{{player.name}}">Convert</button> </span>
+	  </td>
+	</tr>
+<tr ng-repeat = "player in players">
+	  <td>Gadianton</td>
+	  <td>Kishkumen</td>
+	  <td>Gadianton</td>
+	  <td>Living</td>
+
+<!--the kill button should change the living status to dead, but the save button will change it back to living; 
+the convert button will toggle them from Nephite to Gadianton and vice versa -->
+	  <td>
+	    <span title="This will change the players living status to dead."> <button ng-model="kill-{{player.name}}">Kill</button> </span>
+	    <span title="This will change the players living status to living."> <button ng-model="save-{{player.name}}">Save</button> </span>
+	    <span title="This will turn a Gadianton into a Nephite or vice versa."> <button ng-model="convert-{{player.name}}">Convert</button> </span>
+	  </td>
+	</tr>
+<tr ng-repeat = "player in players">
+	  <td>Gadianton</td>
+	  <td>Gadianton</td>
+	  <td>Gadianton</td>
+	  <td>Dead</td>
+
+<!--the kill button should change the living status to dead, but the save button will change it back to living; 
+the convert button will toggle them from Nephite to Gadianton and vice versa -->
+	  <td>
+	    <span title="This will change the players living status to dead."> <button ng-model="kill-{{player.name}}">Kill</button> </span>
+	    <span title="This will change the players living status to living."> <button ng-model="save-{{player.name}}">Save</button> </span>
+	    <span title="This will turn a Gadianton into a Nephite or vice versa."> <button ng-model="convert-{{player.name}}">Convert</button> </span>
+	  </td>
+	</tr>
+<tr ng-repeat = "player in players">
+	  <td>Seer</td>
+	  <td>Mosiah</td>
+	  <td>Nephite</td>
+	  <td>Living</td>
+
+<!--the kill button should change the living status to dead, but the save button will change it back to living; 
+the convert button will toggle them from Nephite to Gadianton and vice versa -->
+	  <td>
+	    <span title="This will change the players living status to dead."> <button ng-model="kill-{{player.name}}">Kill</button> </span>
+	    <span title="This will change the players living status to living."> <button ng-model="save-{{player.name}}">Save</button> </span>
+	    <span title="This will turn a Gadianton into a Nephite or vice versa."> <button ng-model="convert-{{player.name}}">Convert</button> </span>
+	  </td>
+	</tr>
+<tr ng-repeat = "player in players">
+	  <td>Executioner</td>
+	  <td>Cain</td>
+	  <td>Nephite</td>
+	  <td>Living</td>
+
+<!--the kill button should change the living status to dead, but the save button will change it back to living; 
+the convert button will toggle them from Nephite to Gadianton and vice versa -->
+	  <td>
+	    <span title="This will change the players living status to dead."> <button ng-model="kill-{{player.name}}">Kill</button> </span>
+	    <span title="This will change the players living status to living."> <button ng-model="save-{{player.name}}">Save</button> </span>
+	    <span title="This will turn a Gadianton into a Nephite or vice versa."> <button ng-model="convert-{{player.name}}">Convert</button> </span>
+	  </td>
+	</tr>
+<tr ng-repeat = "player in players">
+	  <td>Nephite</td>
+	  <td>Nephi</td>
+	  <td>Nephite</td>
+	  <td>Living</td>
+
+<!--the kill button should change the living status to dead, but the save button will change it back to living; 
+the convert button will toggle them from Nephite to Gadianton and vice versa -->
+	  <td>
+	    <span title="This will change the players living status to dead."> <button ng-model="kill-{{player.name}}">Kill</button> </span>
+	    <span title="This will change the players living status to living."> <button ng-model="save-{{player.name}}">Save</button> </span>
+	    <span title="This will turn a Gadianton into a Nephite or vice versa."> <button ng-model="convert-{{player.name}}">Convert</button> </span>
+	  </td>
+	</tr>
+<tr ng-repeat = "player in players">
+	  <td>Nephite</td>
+	  <td>Lehi</td>
+	  <td>Nephite</td>
+	  <td>Living</td>
+
+<!--the kill button should change the living status to dead, but the save button will change it back to living; 
+the convert button will toggle them from Nephite to Gadianton and vice versa -->
+	  <td>
+	    <span title="This will change the players living status to dead."> <button ng-model="kill-{{player.name}}">Kill</button> </span>
+	    <span title="This will change the players living status to living."> <button ng-model="save-{{player.name}}">Save</button> </span>
+	    <span title="This will turn a Gadianton into a Nephite or vice versa."> <button ng-model="convert-{{player.name}}">Convert</button> </span>
+	  </td>
+	</tr>
+<tr ng-repeat = "player in players">
+	  <td>Nephite</td>
+	  <td>Jacob</td>
+	  <td>Nephite</td>
+	  <td>Living</td>
+
+<!--the kill button should change the living status to dead, but the save button will change it back to living; 
+the convert button will toggle them from Nephite to Gadianton and vice versa -->
+	  <td>
+	    <span title="This will change the players living status to dead."> <button ng-model="kill-{{player.name}}">Kill</button> </span>
+	    <span title="This will change the players living status to living."> <button ng-model="save-{{player.name}}">Save</button> </span>
+	    <span title="This will turn a Gadianton into a Nephite or vice versa."> <button ng-model="convert-{{player.name}}">Convert</button> </span>
+	  </td>
+	</tr>
+</table> 
+  <br><br><br>
+  <button id="startGame" ng-click = "startGame()" alignment = "center">Start Game</button>  
+  <br></br>
+  
+  <header>Who is the cheif judge?</header> 
+  <form>
+	  <input type="cJudge">
+  </form>
+  <br></br>
+  <button id="endGame" ng-click = "endGame()">End Game</button>
+  <br></br><br><br>
+
+  <header>Player Description:</header> 
+
+	<form name="playerDescription">
+		<p><select NAME="pageSelect" SIZE="1" onChange="selectPlayerDescription(this.form.pageSelect)">
+		<option VALUE="none" SELECTED>SELECT A PLAYER DESCRIPTION</option>
+		<option VALUE="players/angel.html">Angel</option>
+		<option VALUE="players/apostate.html">Apostate</option>
+		<option VALUE="players/assassin.html">Assassin</option>
+		<option VALUE="players/cheifJudge.html">Chief Judge</option>
+		<option VALUE="players/executioner.html">Executioner</option>
+		<option VALUE="players/gadiantonLeader.html">Gadianton Leader</option>
+		<option VALUE="players/gadiantonRobber.html">Gadianton_Robber</option>
+		<option VALUE="players/gadiantonSpy.html">Gadianton Spy</option>
+		<option VALUE="players/memberMissionary.html">Member Missionary</option>
+		<option VALUE="players/missionaryLeader.html">Missionary Leader</option>
+		<option VALUE="players/nephite.html">Nephite</option>
+		<option VALUE="players/nephiteJudge.html">Nephite Judge</option>
+		<option VALUE="players/nephiteSpy.html">Nephite Spy</option>
+		<option VALUE="players/prophet.html">Prophet</option>
+		<option VALUE="players/seer.html">Seer</option>
+		<option VALUE="players/traitor.html">Traitor</option>
+
+	</select> </p>
+	<p><!-- end of code in the body - stop copying body code here --> <!--------------------------------------------------------------------------> <!--webbot bot="HTMLMarkup" startspan --><IFRAME NAME="iframe2" SRC="players/blank.html" ALIGN="top" HEIGHT="100%" WIDTH="95%" HSPACE="10" VSPACE="10" align="middle"><!--webbot bot="HTMLMarkup" endspan --><!--webbot
+        bot="HTMLMarkup" startspan --><!--webbot bot="HTMLMarkup" endspan --> If you can see
+        this, your browser does not support iframes!<!--webbot bot="HTMLMarkup" startspan --></IFRAME><!--webbot
+        bot="HTMLMarkup" endspan --></p>
+        </form>
+        
+        <script language="JAVASCRIPT">
+                <!--//
+                function selectPlayerDescription(mySelect)
+                {
+                PageIndex2=mySelect.selectedIndex;
+                {
+                if 
+                (
+                mySelect.options[PageIndex2].value != "none"
+                )
+                {
+                frames['iframe2'].location.href = mySelect.options[PageIndex2].value;
+                }
+
+                }
+                }
+                //-->
+        </script>
+
+</body>
+<hr><hr>
+</html>

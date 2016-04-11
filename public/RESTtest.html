@@ -1,0 +1,38 @@
+
+<html>
+<head>
+  <title>Create Game</title>
+ <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+  <script src="javascripts/app.js"></script>
+</head>
+<body ng-app="game" ng-controller="MainCtrl">
+<div class="row">
+<div class="col-md-6 col-md-offset-3">
+<div class="page-header"> 
+  <h1>Create Game Test </h1>
+</div>
+
+  <form ng-submit="addGame()" style = "margin-top30px;">
+   Game Title <input type="text" ng-model="title"></input>
+   Number of Players <input type="text" ng-model="players"></input>
+    <button type="submit">Create Game</button>
+  </form>
+<h1>Join Game Test</h1>
+  <form ng-submit="joinGame()" style = "margin-top30px;">
+   Game Title <input type="text" ng-model="title_to_join"></input>
+    <button type="submit">Join Game</button>
+  </form>
+</div>
+</div>
+<p>
+The Create Game Button Creates a new game on the database<br>
+The Join Game Button will increment the number of players in the game that you want to join<br>
+<br>
+To View all the Games on the server type:
+<pre>http://ec2-54-201-26-35.us-west-2.compute.amazonaws.com:3071/getAllGames</pre>
+To Get a specific game use:
+<pre>http://ec2-54-201-26-35.us-west-2.compute.amazonaws.com:3071/getGame?q=YOUR_GAME_NAME</pre>
+Make sure that the express server in MattsStuff/were is running for the rest service to work!
+</p>
+</body>
+</html>

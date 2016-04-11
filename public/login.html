@@ -1,0 +1,29 @@
+<!DOCTYPE = html>
+<html lang="en">
+<head>
+<title>Login Page</title>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+<script src="javascripts/app.js"></script>
+<meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+<link href="bofm.css" rel="stylesheet" type="text/css">
+</head>
+<body ng-app="game" ng-controller="MainCtrl">
+<h1>Login</h2>
+<center><img src="gImages/gadiantonRobber.jpg" alt="gadRob" style="width:170px;height:250px;"></center>
+<form ng-submit = "loginSubmit()">
+<h4>Player's Name</h4>
+<input align="center" type="text" name="player" ng-model = "createGamePlayerName">
+<h4>Are You The Narrator?</h4>
+<select align="center" style="min-width:4%;" ng-model = "areYouNarrator">
+  <option value="No">No</option>
+  <option value="Yes">Yes</option>
+</select>
+<br><br><br><br>
+<button type="loginSubmit" style="height:25px; width:75px" >Submit</button>
+</form>
+<br><br>
+<div ng-repeat = "game in games">
+</div>
+
+</body>
+</html>

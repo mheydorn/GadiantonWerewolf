@@ -1,0 +1,33 @@
+<!DOCTYPE = html>
+<html lang="en">
+<head>
+<title>Start Page</title>
+ <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+<script src="javascripts/app.js"></script>
+<meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+<link href="bofm.css" rel="stylesheet" type="text/css">
+</head>
+<body ng-app="game" ng-controller="MainCtrl">
+<h1>Gadianton Werewolf</h1>
+<center><img src="gImages/logo.jpg" alt="Squirrel" style="width:400px;height:250px;"></center>
+<form>
+<h4>Create a Game:</h4><div class = "Label">
+Name of New Game: <input align="center" type="text" name="createName" ng-model = "createGameField">
+<br><br>
+</div>
+<button type="createTeam" style="height:25px; width:110px" ng-model = "createTeamButton" ng-click = "createGame()">Create Game</button>
+<h2>- or -</h2>
+<h4>Join a Game:</h4>
+<div class = "Label">Game Name: 
+<input align="center" type="text" name="findName" ng-model = "findGameField">
+<br><br>
+<div class = "Label">Player Name: 
+<input align="center" type="text" name="playerName" ng-model = "playerName"><br><br>
+<button type="findTeam" style="height:25px; width:110px" ng-model = "findGameButton" ng-click = "findGame()">Join Game</button>
+</form>
+</div>
+<br><br>
+</body>
+</html>
+
+
